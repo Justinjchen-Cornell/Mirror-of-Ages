@@ -28,7 +28,7 @@ themes, cases_out, unmatched = [], [], []
 field_re = re.compile(r'^- \*\*(.+?)\*\*[：:](.*)$')
 
 for fn in sorted(os.listdir(os.path.join(SKILL, 'cases'))):
-    if not fn.endswith('.md'):
+    if not fn.endswith('.md') or fn.startswith('_'):
         continue
     fid = fn[:3]
     text = open(os.path.join(SKILL, 'cases', fn), encoding='utf-8').read()
