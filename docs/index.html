@@ -45,7 +45,7 @@
 
   <section id="workspace">
     <div class="sec-head"><h2>推演工作台</h2><span class="sub">Workspace · 描述处境 → 匹配内核 → 生成推演报告</span></div>
-    <p class="sec-desc">写下你的抉择困境（越具体越好）。系统会从两部史书中找出<b>结构相似</b>的历史案例，并组装一份推演报告骨架——选项、判断、结果、显性/隐性代价、规律与风险，全部带出处。（本版为模板组装式，无需 AI；报告可直接复制进笔记。）</p>
+    <p class="sec-desc">写下你的抉择困境（越具体越好）。系统会从两部史书中找出<b>结构相似</b>的历史案例，并组装一份推演报告——选项、判断、结果、显性/隐性代价、规律与风险，全部带出处。两种模式：<b>模板版</b>即时可用、永不幻觉；<b>✨ AI 精算版</b>需配置你自己的大模型 API Key（BYOK——Key 只存你的浏览器本地），由 AI 做结构化穿针引线、生成针对你处境的个性化推演（事实层仍 100% 来自案例库）。</p>
     <div class="step">
       <h3><span class="no">1</span>说说你的处境</h3>
       <textarea id="situation" placeholder="例：我和合伙人一起创业五年，最近他开始不让我参与核心决策，还提出让我退股——条件是先签协议后付款。我该接受吗？"></textarea>
@@ -63,9 +63,12 @@
     <div class="step" id="step3" style="display:none">
       <h3><span class="no">3</span>生成推演报告</h3>
       <div class="report-actions">
-        <button class="btn" id="btnGen" disabled>生成推演报告</button>
+        <button class="btn" id="btnGen" disabled>生成报告（模板版）</button>
+        <button class="btn" id="btnAI" disabled>✨ AI 精算版</button>
         <button class="btn ghost" id="btnCopy" type="button">复制 Markdown</button>
         <button class="btn ghost" id="btnDownload" type="button">下载 .md</button>
+        <button class="btn ghost sm" id="btnAISettings" type="button" title="配置你自己的大模型 API（BYOK）">⚙️ AI 设置</button>
+        <span class="hint" id="aiStatus" style="align-self:center"></span>
       </div>
       <div class="report-panes" id="reportArea" style="display:none">
         <div class="pane"><div class="pane-t">Markdown 源文（可直接贴进笔记/发给 AI 继续加工）</div><pre id="reportMd"></pre></div>
@@ -113,6 +116,26 @@
       <button class="close" id="modalClose" aria-label="关闭">×</button>
     </div>
     <div class="m-body" id="modalBody"></div>
+  </div>
+</div>
+
+<div class="modal-mask" id="aiModal">
+  <div class="modal" style="max-width:560px">
+    <div class="m-head">
+      <div><h3>AI 设置 · BYOK</h3><div class="meta">API Key 仅保存在你的浏览器本地（localStorage），不会上传到本站；请使用额度受限的专用 Key</div></div>
+      <button class="close" id="aiClose" aria-label="关闭">×</button>
+    </div>
+    <div class="m-body">
+      <div class="fitem"><h4>服务商</h4><select id="aiProvider"></select></div>
+      <div class="fitem"><h4>API Base URL</h4><input type="text" id="aiBase" spellcheck="false" placeholder="https://api.deepseek.com/v1"></div>
+      <div class="fitem"><h4>API Key</h4><input type="password" id="aiKey" spellcheck="false" placeholder="sk-..."></div>
+      <div class="fitem"><h4>模型</h4><input type="text" id="aiModel" spellcheck="false" placeholder="deepseek-chat"></div>
+      <p class="hint">推荐 DeepSeek（便宜、支持浏览器直连、国内可访问）。如遇 CORS / 网络报错，可换 硅基流动 / Kimi / OpenRouter——均已验证支持浏览器直连。</p>
+      <div class="report-actions" style="margin-bottom:0">
+        <button class="btn" id="aiSave" type="button">保存配置</button>
+        <button class="btn ghost" id="aiCancel" type="button">取消</button>
+      </div>
+    </div>
   </div>
 </div>
 

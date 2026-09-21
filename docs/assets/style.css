@@ -165,3 +165,10 @@ footer .row{display:flex; justify-content:space-between; gap:20px; flex-wrap:wra
   .report-panes{grid-template-columns:1fr;}
   .nav .links{gap:12px; font-size:13px;}
 }
+
+/* AI settings form */
+.fitem input, .fitem select{
+  width:100%; padding:8px 12px; border:1px solid var(--line); border-radius:6px;
+  font:inherit; font-size:13.5px; background:#fff; color:var(--ink);
+}
+.fitem input:focus, .fitem select:focus{outline:2px solid var(--bronze-bg); border-color:var(--bronze);}

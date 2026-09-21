@@ -236,7 +236,8 @@
     $('#candidatesArea').innerHTML = html;
     var nSel = Object.keys(ws.selected).length;
     $('#btnGen').disabled = nSel === 0;
-    $('#btnGen').textContent = '生成推演报告（已选 ' + nSel + ' 例）';
+    $('#btnGen').textContent = '生成报告（模板版 · 已选 ' + nSel + ' 例）';
+    var aiB = $('#btnAI'); if (aiB && !aiB.textContent.match(/推演中/)) aiB.disabled = nSel === 0;
   }
   function stripQ(s) { return cleanRef(s); }
   function buildReport() {
@@ -278,6 +279,148 @@
     $('#reportArea').scrollIntoView({ behavior: 'smooth' });
   }
 
+  /* ---------- AI 精算版（BYOK · OpenAI 兼容协议） ---------- */
+  var AI_PRESETS = {
+    deepseek: { name: 'DeepSeek', base: 'https://api.deepseek.com/v1', model: 'deepseek-chat' },
+    siliconflow: { name: '硅基流动 SiliconFlow', base: 'https://api.siliconflow.cn/v1', model: 'deepseek-ai/DeepSeek-V3' },
+    moonshot: { name: 'Kimi (Moonshot)', base: 'https://api.moonshot.cn/v1', model: 'moonshot-v1-8k' },
+    openrouter: { name: 'OpenRouter', base: 'https://openrouter.ai/api/v1', model: 'deepseek/deepseek-chat-v3.1:free' },
+    openai: { name: 'OpenAI', base: 'https://api.openai.com/v1', model: 'gpt-4o-mini' },
+    custom: { name: '自定义（OpenAI 兼容）', base: '', model: '' }
+  };
+  var aiCfg = (function () {
+    try { return JSON.parse(localStorage.getItem('moa_ai') || 'null') || { provider: 'deepseek', base: '', key: '', model: '' }; }
+    catch (e) { return { provider: 'deepseek', base: '', key: '', model: '' }; }
+  })();
+  function saveCfg(c) {
+    aiCfg = c;
+    try { localStorage.setItem('moa_ai', JSON.stringify(c)); } catch (e) {}
+    updateAiStatus();
+  }
+  function cfgReady() { return !!(aiCfg.base && aiCfg.key && aiCfg.model); }
+  function updateAiStatus() {
+    var el = $('#aiStatus'); if (!el) return;
+    if (cfgReady()) {
+      var pn = (AI_PRESETS[aiCfg.provider] && AI_PRESETS[aiCfg.provider].name) || '自定义';
+      el.innerHTML = 'AI: <b>' + esc(pn) + '</b> ✓';
+    } else {
+      el.innerHTML = 'AI: 未配置 → 点「⚙️ AI 设置」';
+    }
+  }
+  function openAiModal() {
+    var sel = $('#aiProvider');
+    sel.innerHTML = Object.keys(AI_PRESETS).map(function (k) {
+      return '<option value="' + k + '">' + esc(AI_PRESETS[k].name) + '</option>';
+    }).join('');
+    sel.value = aiCfg.provider || 'deepseek';
+    var p = AI_PRESETS[sel.value];
+    $('#aiBase').value = aiCfg.base || (p && p.base) || '';
+    $('#aiKey').value = aiCfg.key || '';
+    $('#aiModel').value = aiCfg.model || (p && p.model) || '';
+    $('#aiModal').classList.add('show');
+  }
+  function closeAiModal() { var m = $('#aiModal'); if (m) m.classList.remove('show'); }
+
+  var AI_SYS = '你是「鉴往知来 · Mirror of Ages」的抉择推演引擎：基于中国历史案例，为用户生成结构化推演报告。\n\n' +
+    '【铁律】\n' +
+    '1. 只允许使用【可用历史案例】中提供的史实与引文；严禁编造、外扩任何其他历史细节。\n' +
+    '2. 引文必须与提供的案例原文完全一致，并标注出处（卷次/篇名）。\n' +
+    '3. 显性代价（钱/命/位置）与隐性代价（名声/结构/后代）分开陈述。\n' +
+    '4. "判断对错"与"结果好坏"分开评价——判断正确也可能失败（幸存者偏差）。\n' +
+    '5. 禁止宿命式断言；你是思维脚手架，不是决策替代。\n\n' +
+    '【输出格式（Markdown）】\n' +
+    '# 抉择推演：{一行标题}\n\n' +
+    '> 生成自 Mirror of Ages · 鉴往知来（AI 精算版）\n\n' +
+    '## 0. 你的处境（内核提炼）\n把用户处境结构化为：决策者位置 × 关键关系 × 核心利害 × 硬约束；结尾一行「场景内核：…」。\n\n' +
+    '## 1. 历史镜鉴\n每个案例一小节（### 案例一｜标题），包含：\n- 结构同构点（与用户处境哪里相同、哪里不同）\n- 当事人的选项与判断（严格来自案例）\n- 结果与显性/隐性代价\n- 对用户的镜鉴点（1-2 句）\n\n' +
+    '## 2. 结构对照表\n| 维度 | 历史场景 | 你的处境 | 可迁移性 |\n至少覆盖：权力/利益结构、信息条件、退出成本、时代差异。\n\n' +
+    '## 3. 规律启发\n2-4 条，每条注明依据案例名。\n\n' +
+    '## 4. 风险提醒\n每条含「失效条件：若……则失效」；末尾提示样本偏差与时代差异。\n\n' +
+    '## 5. 可选行动提示（非决策替代）\n3 个自查问题 + 一个 3-5 项观察清单。\n\n' +
+    '结尾固定一行：> AI 生成 · 引文以案例库 quotes.json 为准。';
+
+  function caseContext(c) {
+    var order = ['出处', '情境', '当时的选项', '判断与推理', '结果', '显性代价', '隐性代价', '规律启发', '风险提醒', '原文'];
+    var out = '### ' + c.title + '（' + themeLabel(c.theme) + '）\n';
+    order.forEach(function (k) {
+      if (c.fields[k]) out += '- ' + k + '：' + cleanRef(c.fields[k]).replace(/\*\*/g, '') + '\n';
+    });
+    return out;
+  }
+  function buildAIMessages(input, cases) {
+    var ctx = cases.map(caseContext).join('\n');
+    var user = '【用户处境】\n' + input + '\n\n【场景内核】' + (ws.kernels.join('、') || '（未标注）') +
+      '\n\n【可用历史案例】\n' + ctx + '\n请生成推演报告。';
+    return [
+      { role: 'system', content: AI_SYS },
+      { role: 'user', content: user }
+    ];
+  }
+  function callAI(messages, onDelta) {
+    return new Promise(function (resolve, reject) {
+      var url = aiCfg.base.replace(/\/+$/, '') + '/chat/completions';
+      fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key },
+        body: JSON.stringify({ model: aiCfg.model, stream: true, temperature: 0.5, messages: messages })
+      }).then(function (resp) {
+        if (!resp.ok) {
+          resp.text().then(function (t) { reject(new Error('HTTP ' + resp.status + '：' + t.slice(0, 180))); }, function () { reject(new Error('HTTP ' + resp.status)); });
+          return;
+        }
+        var reader = resp.body.getReader();
+        var dec = new TextDecoder();
+        var buf = '', full = '';
+        (function pump() {
+          reader.read().then(function (r) {
+            if (r.done) { resolve(full); return; }
+            buf += dec.decode(r.value, { stream: true });
+            var lines = buf.split('\n');
+            buf = lines.pop();
+            lines.forEach(function (ln) {
+              ln = ln.trim();
+              if (ln.indexOf('data:') !== 0) return;
+              var d = ln.slice(5).trim();
+              if (d === '[DONE]') return;
+              try {
+                var j = JSON.parse(d);
+                var delta = (j.choices && j.choices[0] && j.choices[0].delta && j.choices[0].delta.content) || '';
+                if (delta) { full += delta; onDelta(full); }
+              } catch (e) {}
+            });
+            pump();
+          }, reject);
+        })();
+      }, function (err) { reject(new Error('网络异常：' + err.message + '（若为 CORS/连接错误，请更换服务商）')); });
+    });
+  }
+  function generateAI() {
+    var input = $('#situation').value.trim();
+    var cases = D.cases.filter(function (c) { return ws.selected[c.id]; });
+    if (!input || !cases.length) { toast('先填写处境并选择案例'); return; }
+    if (!cfgReady()) { openAiModal(); toast('先配置 AI（BYOK，1 分钟）'); return; }
+    var area = $('#reportArea');
+    area.style.display = 'grid';
+    $('#reportMd').textContent = '✨ AI 正在推演（streaming…）';
+    $('#reportPreview').innerHTML = '<p class="hint">✨ AI 正在精算——用你的处境 × 选中的 ' + cases.length + ' 个历史案例生成个性化推演…</p>';
+    var btn = $('#btnAI'); btn.disabled = true; btn.textContent = '✨ 推演中…';
+    area.scrollIntoView({ behavior: 'smooth' });
+    callAI(buildAIMessages(input, cases), function (soFar) {
+      $('#reportMd').textContent = soFar;
+      $('#reportMd').scrollTop = $('#reportMd').scrollHeight;
+    }).then(function (full) {
+      $('#reportMd').textContent = full;
+      $('#reportPreview').innerHTML = renderMD(full);
+      toast('✨ AI 推演完成 — 引文以案例库为准');
+    }).catch(function (err) {
+      $('#reportMd').textContent = '生成失败：' + err.message + '\n\n排查建议：\n1) 检查 API Key 是否正确、账户是否有余额\n2) 若为 CORS/网络错误 → 打开「⚙️ AI 设置」换一个服务商（DeepSeek / 硅基流动 / Kimi / OpenRouter 均支持浏览器直连）\n3) Base URL 不要带 /chat/completions 后缀';
+      $('#reportPreview').innerHTML = '<p class="hint">生成失败，排查建议见左侧。</p>';
+      toast('生成失败，见提示');
+    }).then(function () {
+      btn.disabled = false; btn.textContent = '✨ AI 精算版';
+    });
+  }
+
   /* ---------- init ---------- */
   function init() {
     // nav anchor default
@@ -298,7 +441,7 @@
     // modal
     $('#modalClose').addEventListener('click', closeModal);
     $('#modalMask').addEventListener('click', function (e) { if (e.target === this) closeModal(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeModal(); closeAiModal(); } });
 
     // workspace
     $('#kernelArea').addEventListener('click', function (e) {
@@ -352,6 +495,27 @@
       document.body.appendChild(a); a.click(); document.body.removeChild(a);
       toast('已下载 .md 文件');
     });
+    // AI (BYOK) wiring
+    $('#btnAI').addEventListener('click', generateAI);
+    $('#btnAISettings').addEventListener('click', openAiModal);
+    $('#aiClose').addEventListener('click', closeAiModal);
+    $('#aiModal').addEventListener('click', function (e) { if (e.target === this) closeAiModal(); });
+    $('#aiCancel').addEventListener('click', closeAiModal);
+    $('#aiProvider').addEventListener('change', function () {
+      var p = AI_PRESETS[this.value];
+      if (p) { if (p.base) $('#aiBase').value = p.base; if (p.model) $('#aiModel').value = p.model; }
+    });
+    $('#aiSave').addEventListener('click', function () {
+      saveCfg({
+        provider: $('#aiProvider').value,
+        base: $('#aiBase').value.trim(),
+        key: $('#aiKey').value.trim(),
+        model: $('#aiModel').value.trim()
+      });
+      closeAiModal(); toast('AI 配置已保存（仅存本机浏览器）');
+    });
+    updateAiStatus();
+
     // advanced toggle
     var adv = $('#advToggle');
     if (adv) adv.addEventListener('click', function () {
