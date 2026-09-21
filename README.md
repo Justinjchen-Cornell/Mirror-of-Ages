@@ -10,6 +10,8 @@
 
 ## 演示
 
+🌐 **在线体验**：<https://justinjchen-cornell.github.io/Mirror-of-Ages/> —— 打开「推演工作台」，写下你的处境，即可匹配场景内核并生成一份推演报告骨架（44 张案例卡 / 28 个内核也已全部上线，支持搜索与筛选）。
+
 ![示例推演报告](docs/images/demo-report.png)
 
 > 上图为一份真实输出示例（职场「功高主疑」情境）。完整报告（含结构对照、规律启发、风险提醒与行动提示）→ [docs/example-report.md](docs/example-report.md)；首发推广文案（公众号 / 即刻 / X）→ [docs/launch-kit.md](docs/launch-kit.md)

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鉴往知来 · Mirror of Ages — 古籍抉择推演</title>
+<meta name="description" content="用《资治通鉴》《史记》做人生抉择推演：44 张历史案例卡，28 个场景内核。你描述困局，它找出结构相同的历史先例。你的纠结，古人下过。">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%239a6b2f'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' dominant-baseline='middle' fill='%23f7f4ee' font-family='serif'%3E鉴%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <span class="brand">鉴往知来<em>Mirror of Ages</em></span>
+    <div class="links">
+      <a href="#workspace">推演工作台</a>
+      <a href="#library">案例库</a>
+      <a href="#kernels">场景内核</a>
+      <a href="https://github.com/Justinjchen-Cornell/Mirror-of-Ages" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>鉴往知来</h1>
+    <div class="en serif">Mirror of Ages</div>
+    <p class="tagline">你的纠结，古人下过。<span class="sm">Your dilemma has a precedent. What's past is prologue.</span></p>
+    <div class="stats">
+      <div class="stat"><b>44</b><span>拆解案例卡（12 主题）</span></div>
+      <div class="stat"><b>28</b><span>场景内核</span></div>
+      <div class="stat"><b>424</b><span>卷/篇 检索底座（资治通鉴 294 卷 · 史记 130 篇）</span></div>
+      <div class="stat"><b>73</b><span>条引文登记（卷次可查）</span></div>
+    </div>
+    <div class="cta">
+      <a class="btn" href="#workspace">开始推演 →</a>
+      <a class="btn ghost" href="#library">浏览案例库</a>
+      <a class="btn ghost" href="https://github.com/Justinjchen-Cornell/Mirror-of-Ages" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="workspace">
+    <div class="sec-head"><h2>推演工作台</h2><span class="sub">Workspace · 描述处境 → 匹配内核 → 生成推演报告</span></div>
+    <p class="sec-desc">写下你的抉择困境（越具体越好）。系统会从两部史书中找出<b>结构相似</b>的历史案例，并组装一份推演报告骨架——选项、判断、结果、显性/隐性代价、规律与风险，全部带出处。（本版为模板组装式，无需 AI；报告可直接复制进笔记。）</p>
+    <div class="step">
+      <h3><span class="no">1</span>说说你的处境</h3>
+      <textarea id="situation" placeholder="例：我和合伙人一起创业五年，最近他开始不让我参与核心决策，还提出让我退股——条件是先签协议后付款。我该接受吗？"></textarea>
+      <div class="report-actions" style="margin-bottom:0">
+        <button class="btn" id="btnMatch">匹配场景内核 →</button>
+        <button class="btn ghost" id="btnSample">载入示例（二把手困境）</button>
+      </div>
+    </div>
+    <div class="step" id="step2" style="display:none">
+      <h3><span class="no">2</span>场景内核与候选案例</h3>
+      <div id="kernelArea"></div>
+      <p class="hint" style="margin-top:16px">📇 候选案例（点击选中 / 取消，建议 2–3 例，点击卡片标题可看全文）：</p>
+      <div class="pickgrid" id="candidatesArea"></div>
+    </div>
+    <div class="step" id="step3" style="display:none">
+      <h3><span class="no">3</span>生成推演报告</h3>
+      <div class="report-actions">
+        <button class="btn" id="btnGen" disabled>生成推演报告</button>
+        <button class="btn ghost" id="btnCopy" type="button">复制 Markdown</button>
+        <button class="btn ghost" id="btnDownload" type="button">下载 .md</button>
+      </div>
+      <div class="report-panes" id="reportArea" style="display:none">
+        <div class="pane"><div class="pane-t">Markdown 源文（可直接贴进笔记/发给 AI 继续加工）</div><pre id="reportMd"></pre></div>
+        <div class="pane"><div class="pane-t">渲染预览</div><div class="rendered" id="reportPreview"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="library">
+    <div class="sec-head"><h2>案例库</h2><span class="sub">Library · 44 张案例卡，每张带卷次出处</span><span class="sub" id="libCount"></span></div>
+    <div class="toolbar">
+      <input type="search" id="searchInput" placeholder="搜索案例（人物 / 主题 / 关键词，如：萧何、谈判、被诬）">
+      <select id="themeSelect"></select>
+    </div>
+    <div class="kchips" id="kernelFilter" style="margin-bottom:16px"></div>
+    <div class="casegrid" id="caseGrid"></div>
+  </section>
+
+  <section id="kernels">
+    <div class="sec-head"><h2>场景内核</h2><span class="sub">Kernels · 把处境去时代化之后的 28 种结构</span></div>
+    <p class="sec-desc">内核 ＝「去掉朝代、去掉身份之后，这件事的结构」。找到相同内核，就找到了可以对照的历史先例。</p>
+    <div class="kgrid" id="kernelGrid"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container row">
+    <div>
+      鉴往知来 · Mirror of Ages ｜ 数据：《资治通鉴》（294 卷）·《史记》（130 篇）<br>
+      开源仓库：<a href="https://github.com/Justinjchen-Cornell/Mirror-of-Ages" target="_blank" rel="noopener">GitHub</a> ｜ 内容授权 CC BY-NC-SA 4.0 ｜ 代码 MIT
+    </div>
+    <div>
+      历史有时代边界 · 本工具提供思考框架，不构成决策建议。<br>
+      <span class="serif">Your dilemma has a precedent.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-mask" id="modalMask">
+  <div class="modal">
+    <div class="m-head">
+      <div><h3 id="modalTitle"></h3><div class="meta" id="modalMeta"></div></div>
+      <button class="close" id="modalClose" aria-label="关闭">×</button>
+    </div>
+    <div class="m-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
