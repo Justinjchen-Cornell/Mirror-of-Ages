@@ -8,6 +8,12 @@
 
 ---
 
+## 演示
+
+![示例推演报告](docs/images/demo-report.png)
+
+> 上图为一份真实输出示例（职场「功高主疑」情境）。完整报告（含结构对照、规律启发、风险提醒与行动提示）→ [docs/example-report.md](docs/example-report.md)；首发推广文案（公众号 / 即刻 / X）→ [docs/launch-kit.md](docs/launch-kit.md)
+
 ## 名字由来
 
 - **鉴往知来**：化用《资治通鉴》卷143明文「前事之不忘，后事之师也」，及宋神宗赐名典故"鉴于往事，有资于治道"。

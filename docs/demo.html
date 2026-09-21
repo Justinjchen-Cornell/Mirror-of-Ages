@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Mirror of Ages · 示例推演报告</title>
+<style>
+  :root{
+    --paper:#f7f4ee; --ink:#2b2620; --sub:#6b6255;
+    --bronze:#9a6b2f; --red:#a3372c; --line:#e0d9cc; --card:#fffdf8;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    width:1180px; background:var(--paper); color:var(--ink);
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif;
+    padding:56px 64px 48px;
+  }
+  .brandline{display:flex; align-items:baseline; gap:14px; border-bottom:3px double var(--bronze); padding-bottom:18px;}
+  .brandline h1{font-size:30px; letter-spacing:2px; font-weight:700; font-family:"KaiTi","SimSun",serif;}
+  .brandline .en{color:var(--bronze); font-size:15px; letter-spacing:1px;}
+  .brandline .tag{margin-left:auto; color:var(--sub); font-size:13px;}
+  h2{font-size:17px; margin:30px 0 12px; font-family:"KaiTi","SimSun",serif; letter-spacing:1px;}
+  h2::before{content:"◆ "; color:var(--red); font-size:12px;}
+  .scenario{
+    background:var(--card); border:1px solid var(--line); border-left:4px solid var(--bronze);
+    padding:16px 20px; font-size:14.5px; line-height:1.85; border-radius:4px;
+  }
+  .scenario b{color:var(--red);}
+  .chips{margin-top:12px;}
+  .chip{display:inline-block; background:#efe7d8; color:#7a5220; border:1px solid #dcc9a6;
+    border-radius:99px; padding:3px 14px; font-size:13px; margin-right:8px;}
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .grid .card:last-child{grid-column:1 / -1;}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:6px; padding:16px 18px;
+    font-size:13.5px; line-height:1.8; box-shadow:0 1px 0 rgba(0,0,0,.03);
+  }
+  .card h3{font-size:15px; margin-bottom:2px; font-family:"KaiTi","SimSun",serif;}
+  .card .src{color:var(--sub); font-size:12px; margin-bottom:10px;}
+  .row{display:flex; margin:5px 0;}
+  .k{flex:0 0 86px; color:var(--bronze); font-weight:600;}
+  .v{flex:1;}
+  .quote{
+    margin-top:10px; padding:9px 14px; background:#f2ecdf; border-radius:4px;
+    font-family:"KaiTi","SimSun",serif; font-size:13.5px; color:#4a3d28; line-height:1.75;
+  }
+  .quote::before{content:"「"; color:var(--red);}
+  .quote::after{content:"」"; color:var(--red);}
+  .insight, .risk{
+    background:var(--card); border:1px solid var(--line); border-radius:6px;
+    padding:14px 18px; font-size:13.5px; line-height:1.85;
+  }
+  .risk{border-left:4px solid var(--red);}
+  .insight{border-left:4px solid var(--bronze);}
+  .insight li, .risk li{margin-left:18px;}
+  .footer{
+    margin-top:30px; padding-top:14px; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; color:var(--sub); font-size:12.5px;
+  }
+  .footer .url{color:var(--bronze); font-weight:600;}
+</style>
+</head>
+<body>
+  <div class="brandline">
+    <h1>鉴往知来 · Mirror of Ages</h1>
+    <span class="en">示例推演报告</span>
+    <span class="tag">Your dilemma has a precedent.</span>
+  </div>
+
+  <h2>0 · 你的处境（内核提炼）</h2>
+  <div class="scenario">
+    我在公司做到二号位，业务是我一手带起来的。最近半年，老板的权限调整越来越频繁：
+    预算审批被收回、核心客户转他直管、战略会不再叫我。<b>不是我做错了什么，而是我"太对了"。</b>
+    三个选项：① 主动交权示弱 ② 装作没看见 ③ 暗中谋划另起炉灶。
+  </div>
+  <div class="chips">
+    <span class="chip">功高主疑</span><span class="chip">进退时机</span><span class="chip">被诬中伤·风险预警</span>
+  </div>
+
+  <h2>1 · 历史镜鉴（4 例 · 节选）</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>王翦：把诉求锁进"小尺度"</h3>
+      <div class="src">《资治通鉴》卷七·秦纪二（前225）</div>
+      <div class="row"><span class="k">选项</span><span class="v">A 只谈军务 / B 反复索要田宅（选B）</span></div>
+      <div class="row"><span class="k">判断</span><span class="v">帝国主力尽在其手，让君主睡不着的不是"能力"而是"能做什么"。示贪比示忠更可信——忠诚无法验证，欲望可以定价。</span></div>
+      <div class="row"><span class="k">结果</span><span class="v">灭楚，善终</span></div>
+      <div class="row"><span class="k">显性代价</span><span class="v">公开的"市侩"名声</span></div>
+      <div class="quote">为大王将，有功，终不得封侯，故及大王之向臣，以请田宅为子孙业耳。</div>
+    </div>
+    <div class="card">
+      <h3>萧何：避免与老板争同一个维度</h3>
+      <div class="src">《资治通鉴》卷十二·汉纪四（前195–193）</div>
+      <div class="row"><span class="k">选项</span><span class="v">A 收声避事 / B 继续为民请命（选B，下狱）</span></div>
+      <div class="row"><span class="k">判断</span><span class="v">老板不满的不是钱，是名声的流向。此后永久降级家族生活标准：置田必择穷僻之地。</span></div>
+      <div class="row"><span class="k">结果</span><span class="v">善终；家训流传两千年</span></div>
+      <div class="row"><span class="k">隐性代价</span><span class="v">一生再无政策级作为——事业提前封顶</span></div>
+      <div class="quote">相国多受贾人财物，乃为请吾苑！</div>
+    </div>
+    <div class="card">
+      <h3>郭子仪：透明＋即时应答（反例对照：檀道济之死）</h3>
+      <div class="src">卷二百二十四、二百二十七（767–781）｜反例：卷一百二十三（436）</div>
+      <div class="row"><span class="k">动作</span><span class="v">「诏书一纸徵之，无不即日就道」——被召即到、交权即走；家门透明、出事即请罪。不消除谗言，而是消除谗言的"可信性"。</span></div>
+      <div class="row"><span class="k">结果</span><span class="v">四朝不倒，85 岁善终，「由是谗谤不行」</span></div>
+      <div class="row"><span class="k">反例</span><span class="v">檀道济威名+兵权+嫡系俱全，「乃坏汝万里长城！」死于"存在即威胁"——示弱必须在对方尚未决策的窗口期。</span></div>
+      <div class="quote">子仪为上将，拥强兵，程元振、鱼朝恩谗毁百端，诏书一纸徵之，无不即日就道，由是谗谤不行。</div>
+    </div>
+  </div>
+
+  <h2>2 · 规律与风险</h2>
+  <div class="grid">
+    <div class="insight">
+      <b>规律启发（节选）</b>
+      <ul>
+        <li><b>威胁读数律</b>：容忍度取决于"属性组合"，不取决于忠诚声明——拆属性，别作声明。</li>
+        <li><b>窗口期律</b>：示弱要在对方"尚未决策"时；一旦沟通被切断，切换退出预案。</li>
+        <li><b>可定价律</b>：给一个可被满足的具体诉求，而不是一个态度。</li>
+      </ul>
+    </div>
+    <div class="risk">
+      <b>风险提醒（节选）</b>
+      <ul>
+        <li>失效条件：对方已进入"必须处理"阶段时，示弱反被读作软弱可拿。</li>
+        <li>幸存者偏差：善终的"示弱成功者"是被记录者，失败者没有留下日记。</li>
+        <li>时代差异：动作要替换成本时代的对应物（权限、项目），不能只学姿态。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>完整报告与推演协议：docs/example-report.md · skill/SKILL.md</span>
+    <span class="url">github.com/Justinjchen-Cornell/Mirror-of-Ages</span>
+  </div>
+</body>
+</html>
