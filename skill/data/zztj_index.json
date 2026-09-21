@@ -1,0 +1,2034 @@
+{
+ "source": "资治通鉴(中华书局点校本+白话今译, 294卷全)",
+ "built": "2026-09-22",
+ "volumes": [
+  {
+   "vol": 58,
+   "era": "汉纪五十",
+   "year_label": "辛酉、181",
+   "line_start": 4,
+   "line_end": 495
+  },
+  {
+   "vol": 59,
+   "era": "汉纪五十一",
+   "year_label": "戊辰、188",
+   "line_start": 496,
+   "line_end": 899
+  },
+  {
+   "vol": 60,
+   "era": "汉纪五十二",
+   "year_label": "辛未、191",
+   "line_start": 900,
+   "line_end": 1287
+  },
+  {
+   "vol": 61,
+   "era": "汉纪五十三",
+   "year_label": "甲戌、194",
+   "line_start": 1288,
+   "line_end": 1658
+  },
+  {
+   "vol": 62,
+   "era": "汉纪五十四",
+   "year_label": "丙子、196",
+   "line_start": 1659,
+   "line_end": 2006
+  },
+  {
+   "vol": 63,
+   "era": "汉纪五十五",
+   "year_label": "己卯、199",
+   "line_start": 2007,
+   "line_end": 2314
+  },
+  {
+   "vol": 64,
+   "era": "汉纪五十六",
+   "year_label": "辛巳、201",
+   "line_start": 2315,
+   "line_end": 2590
+  },
+  {
+   "vol": 65,
+   "era": "汉纪五十七",
+   "year_label": "丙戌、206",
+   "line_start": 2591,
+   "line_end": 2900
+  },
+  {
+   "vol": 66,
+   "era": "汉纪五十八",
+   "year_label": "已丑、209",
+   "line_start": 2901,
+   "line_end": 3239
+  },
+  {
+   "vol": 67,
+   "era": "汉纪五十九",
+   "year_label": "甲午、214",
+   "line_start": 3240,
+   "line_end": 3475
+  },
+  {
+   "vol": 68,
+   "era": "汉纪六十",
+   "year_label": null,
+   "line_start": 3476,
+   "line_end": 3749
+  },
+  {
+   "vol": 69,
+   "era": "魏纪一",
+   "year_label": "庚子、220",
+   "line_start": 3750,
+   "line_end": 4161
+  },
+  {
+   "vol": 70,
+   "era": "魏纪二",
+   "year_label": "癸卯、223",
+   "line_start": 4162,
+   "line_end": 4533
+  },
+  {
+   "vol": 71,
+   "era": "魏纪三",
+   "year_label": "戊申、228",
+   "line_start": 4534,
+   "line_end": 4802
+  },
+  {
+   "vol": 72,
+   "era": "魏纪四",
+   "year_label": "辛亥、231",
+   "line_start": 4803,
+   "line_end": 5195
+  },
+  {
+   "vol": 73,
+   "era": "魏纪五",
+   "year_label": "乙卯、235",
+   "line_start": 5196,
+   "line_end": 5508
+  },
+  {
+   "vol": 74,
+   "era": "魏纪六",
+   "year_label": "戊午、238",
+   "line_start": 5509,
+   "line_end": 5981
+  },
+  {
+   "vol": 75,
+   "era": "魏纪七",
+   "year_label": "丙寅、246",
+   "line_start": 5982,
+   "line_end": 6415
+  },
+  {
+   "vol": 76,
+   "era": "魏纪八",
+   "year_label": "癸酉、253",
+   "line_start": 6416,
+   "line_end": 6677
+  },
+  {
+   "vol": 77,
+   "era": "魏纪九",
+   "year_label": "丙子、256",
+   "line_start": 6678,
+   "line_end": 7013
+  },
+  {
+   "vol": 78,
+   "era": "魏纪十",
+   "year_label": "壬午、262",
+   "line_start": 7014,
+   "line_end": 7339
+  },
+  {
+   "vol": 79,
+   "era": "晋纪一",
+   "year_label": "乙酉、265",
+   "line_start": 7340,
+   "line_end": 7939
+  },
+  {
+   "vol": 80,
+   "era": "晋纪二",
+   "year_label": "癸巳、273",
+   "line_start": 7940,
+   "line_end": 8371
+  },
+  {
+   "vol": 81,
+   "era": "晋纪三",
+   "year_label": "庚子、280",
+   "line_start": 8372,
+   "line_end": 8782
+  },
+  {
+   "vol": 82,
+   "era": "晋纪四",
+   "year_label": "己酉、289",
+   "line_start": 8783,
+   "line_end": 9213
+  },
+  {
+   "vol": 83,
+   "era": "晋纪五",
+   "year_label": "己未、299",
+   "line_start": 9214,
+   "line_end": 9464
+  },
+  {
+   "vol": 84,
+   "era": "晋纪六",
+   "year_label": "辛酉、 301",
+   "line_start": 9465,
+   "line_end": 9747
+  },
+  {
+   "vol": 85,
+   "era": "晋纪七",
+   "year_label": "癸亥，公元303年",
+   "line_start": 9748,
+   "line_end": 10044
+  },
+  {
+   "vol": 86,
+   "era": "晋纪八",
+   "year_label": "乙丑、305",
+   "line_start": 10045,
+   "line_end": 10503
+  },
+  {
+   "vol": 87,
+   "era": "晋纪九",
+   "year_label": "己巳，公元309年",
+   "line_start": 10504,
+   "line_end": 10961
+  },
+  {
+   "vol": 88,
+   "era": "晋纪十",
+   "year_label": "壬申、312",
+   "line_start": 10962,
+   "line_end": 11370
+  },
+  {
+   "vol": 89,
+   "era": "晋纪十一",
+   "year_label": "甲戌、314",
+   "line_start": 11371,
+   "line_end": 11771
+  },
+  {
+   "vol": 90,
+   "era": "晋纪十二",
+   "year_label": "丁丑、317",
+   "line_start": 11772,
+   "line_end": 12134
+  },
+  {
+   "vol": 91,
+   "era": "晋纪十三",
+   "year_label": "己卯、319",
+   "line_start": 12135,
+   "line_end": 12503
+  },
+  {
+   "vol": 92,
+   "era": "晋纪十四",
+   "year_label": "壬午、322",
+   "line_start": 12504,
+   "line_end": 12840
+  },
+  {
+   "vol": 93,
+   "era": "晋纪十五",
+   "year_label": "甲申、324",
+   "line_start": 12841,
+   "line_end": 13215
+  },
+  {
+   "vol": 94,
+   "era": "晋纪十六",
+   "year_label": "戊子、328",
+   "line_start": 13216,
+   "line_end": 13650
+  },
+  {
+   "vol": 95,
+   "era": "晋纪十七",
+   "year_label": "壬辰、332",
+   "line_start": 13651,
+   "line_end": 14139
+  },
+  {
+   "vol": 96,
+   "era": "晋纪十八",
+   "year_label": "戊戌、338",
+   "line_start": 14140,
+   "line_end": 14613
+  },
+  {
+   "vol": 97,
+   "era": "晋纪十九",
+   "year_label": "壬寅、342",
+   "line_start": 14614,
+   "line_end": 15076
+  },
+  {
+   "vol": 98,
+   "era": "晋纪二十",
+   "year_label": "戊申、348",
+   "line_start": 15077,
+   "line_end": 15439
+  },
+  {
+   "vol": 99,
+   "era": "晋纪二十一",
+   "year_label": "辛亥、351",
+   "line_start": 15440,
+   "line_end": 15987
+  },
+  {
+   "vol": 100,
+   "era": "晋纪二十二",
+   "year_label": "乙卯、355",
+   "line_start": 15988,
+   "line_end": 16492
+  },
+  {
+   "vol": 101,
+   "era": "晋纪二十三",
+   "year_label": "庚甲、360",
+   "line_start": 16493,
+   "line_end": 17137
+  },
+  {
+   "vol": 102,
+   "era": "晋纪二十四",
+   "year_label": "己巳、369",
+   "line_start": 17138,
+   "line_end": 17454
+  },
+  {
+   "vol": 103,
+   "era": "晋纪二十五",
+   "year_label": "辛未、371",
+   "line_start": 17455,
+   "line_end": 17851
+  },
+  {
+   "vol": 104,
+   "era": "晋纪二十六",
+   "year_label": "丙子、376",
+   "line_start": 17852,
+   "line_end": 18338
+  },
+  {
+   "vol": 105,
+   "era": "晋纪二十七",
+   "year_label": "癸未、383",
+   "line_start": 18339,
+   "line_end": 18761
+  },
+  {
+   "vol": 106,
+   "era": "晋纪二十八",
+   "year_label": "乙酉、385",
+   "line_start": 18762,
+   "line_end": 19323
+  },
+  {
+   "vol": 107,
+   "era": "晋纪二十九",
+   "year_label": "丁亥、387",
+   "line_start": 19324,
+   "line_end": 19896
+  },
+  {
+   "vol": 108,
+   "era": "晋纪三十",
+   "year_label": "壬辰、392",
+   "line_start": 19897,
+   "line_end": 20473
+  },
+  {
+   "vol": 109,
+   "era": "晋纪三十一",
+   "year_label": "丁酉、397",
+   "line_start": 20474,
+   "line_end": 20832
+  },
+  {
+   "vol": 110,
+   "era": "晋纪三十二",
+   "year_label": "戊戌、398",
+   "line_start": 20833,
+   "line_end": 21137
+  },
+  {
+   "vol": 111,
+   "era": "晋纪三十三",
+   "year_label": "己亥、399",
+   "line_start": 21138,
+   "line_end": 21630
+  },
+  {
+   "vol": 112,
+   "era": "晋纪三十四",
+   "year_label": "辛丑、401",
+   "line_start": 21631,
+   "line_end": 22060
+  },
+  {
+   "vol": 113,
+   "era": "晋纪三十五",
+   "year_label": null,
+   "line_start": 22061,
+   "line_end": 22180
+  },
+  {
+   "vol": 114,
+   "era": "晋纪三十六",
+   "year_label": "乙巳、405",
+   "line_start": 22181,
+   "line_end": 22741
+  },
+  {
+   "vol": 115,
+   "era": "晋纪三十七",
+   "year_label": "己酉、409",
+   "line_start": 22742,
+   "line_end": 23158
+  },
+  {
+   "vol": 116,
+   "era": "晋纪三十八",
+   "year_label": "辛亥、411",
+   "line_start": 23159,
+   "line_end": 23719
+  },
+  {
+   "vol": 117,
+   "era": "晋纪三十九",
+   "year_label": "乙卯、415",
+   "line_start": 23720,
+   "line_end": 24062
+  },
+  {
+   "vol": 118,
+   "era": "晋纪四十",
+   "year_label": "丁巳、417",
+   "line_start": 24063,
+   "line_end": 24652
+  },
+  {
+   "vol": 119,
+   "era": "宋纪一",
+   "year_label": "庚申、420",
+   "line_start": 24653,
+   "line_end": 25267
+  },
+  {
+   "vol": 120,
+   "era": "宋纪二",
+   "year_label": "甲子、424",
+   "line_start": 25268,
+   "line_end": 25862
+  },
+  {
+   "vol": 121,
+   "era": "宋纪三",
+   "year_label": "戊辰、428",
+   "line_start": 25863,
+   "line_end": 26429
+  },
+  {
+   "vol": 122,
+   "era": "宋纪四",
+   "year_label": "辛未、431",
+   "line_start": 26430,
+   "line_end": 27104
+  },
+  {
+   "vol": 123,
+   "era": "宋纪五",
+   "year_label": "丙子、436",
+   "line_start": 27105,
+   "line_end": 27717
+  },
+  {
+   "vol": 124,
+   "era": "宋纪六",
+   "year_label": "壬午、442",
+   "line_start": 27718,
+   "line_end": 28260
+  },
+  {
+   "vol": 125,
+   "era": "宋纪七",
+   "year_label": "丁亥、447",
+   "line_start": 28261,
+   "line_end": 28715
+  },
+  {
+   "vol": 126,
+   "era": "宋纪八",
+   "year_label": "辛卯、451",
+   "line_start": 28716,
+   "line_end": 29044
+  },
+  {
+   "vol": 127,
+   "era": "宋纪九",
+   "year_label": "癸巳、453",
+   "line_start": 29045,
+   "line_end": 29321
+  },
+  {
+   "vol": 128,
+   "era": "宋纪十",
+   "year_label": "甲午、454",
+   "line_start": 29322,
+   "line_end": 29806
+  },
+  {
+   "vol": 129,
+   "era": "宋纪十一",
+   "year_label": "己亥、459",
+   "line_start": 29807,
+   "line_end": 30457
+  },
+  {
+   "vol": 130,
+   "era": "宋纪十二",
+   "year_label": "乙巳、465",
+   "line_start": 30458,
+   "line_end": 30748
+  },
+  {
+   "vol": 131,
+   "era": "宋纪十三",
+   "year_label": "丙午、466",
+   "line_start": 30749,
+   "line_end": 31195
+  },
+  {
+   "vol": 132,
+   "era": "宋纪十四",
+   "year_label": "丁未、467",
+   "line_start": 31196,
+   "line_end": 31634
+  },
+  {
+   "vol": 133,
+   "era": "宋纪十五",
+   "year_label": "辛亥、471",
+   "line_start": 31635,
+   "line_end": 32161
+  },
+  {
+   "vol": 134,
+   "era": "宋纪十六",
+   "year_label": "丙辰、476",
+   "line_start": 32162,
+   "line_end": 32660
+  },
+  {
+   "vol": 135,
+   "era": "齐纪一",
+   "year_label": "己未、479",
+   "line_start": 32661,
+   "line_end": 33383
+  },
+  {
+   "vol": 136,
+   "era": "齐纪二",
+   "year_label": "甲子、484",
+   "line_start": 33384,
+   "line_end": 33942
+  },
+  {
+   "vol": 137,
+   "era": "齐纪三",
+   "year_label": "庚午、490",
+   "line_start": 33943,
+   "line_end": 34371
+  },
+  {
+   "vol": 138,
+   "era": "齐纪四",
+   "year_label": "癸酉、493",
+   "line_start": 34372,
+   "line_end": 34626
+  },
+  {
+   "vol": 139,
+   "era": "齐纪五",
+   "year_label": "甲戌、494",
+   "line_start": 34627,
+   "line_end": 35047
+  },
+  {
+   "vol": 140,
+   "era": "齐纪六",
+   "year_label": "乙亥、495",
+   "line_start": 35048,
+   "line_end": 35405
+  },
+  {
+   "vol": 141,
+   "era": "齐纪七",
+   "year_label": "丁丑、497",
+   "line_start": 35406,
+   "line_end": 35755
+  },
+  {
+   "vol": 142,
+   "era": "齐纪八",
+   "year_label": "己卯、499",
+   "line_start": 35756,
+   "line_end": 36002
+  },
+  {
+   "vol": 143,
+   "era": "齐纪九",
+   "year_label": "庚辰、500",
+   "line_start": 36003,
+   "line_end": 36233
+  },
+  {
+   "vol": 144,
+   "era": "齐纪十",
+   "year_label": "辛巳、501",
+   "line_start": 36234,
+   "line_end": 36516
+  },
+  {
+   "vol": 145,
+   "era": "梁纪一",
+   "year_label": "壬午、502",
+   "line_start": 36517,
+   "line_end": 37018
+  },
+  {
+   "vol": 146,
+   "era": "梁纪二",
+   "year_label": "乙酉、505",
+   "line_start": 37019,
+   "line_end": 37461
+  },
+  {
+   "vol": 147,
+   "era": "梁纪三",
+   "year_label": "戊子、508",
+   "line_start": 37462,
+   "line_end": 37938
+  },
+  {
+   "vol": 148,
+   "era": "梁纪四",
+   "year_label": "乙未、515",
+   "line_start": 37939,
+   "line_end": 38396
+  },
+  {
+   "vol": 149,
+   "era": "梁纪五",
+   "year_label": "己亥、519",
+   "line_start": 38397,
+   "line_end": 38816
+  },
+  {
+   "vol": 150,
+   "era": "梁纪六",
+   "year_label": "甲辰、524",
+   "line_start": 38817,
+   "line_end": 39252
+  },
+  {
+   "vol": 151,
+   "era": "梁纪七",
+   "year_label": "丙午、526",
+   "line_start": 39253,
+   "line_end": 39617
+  },
+  {
+   "vol": 152,
+   "era": "梁纪八",
+   "year_label": "戊申、528",
+   "line_start": 39618,
+   "line_end": 39880
+  },
+  {
+   "vol": 153,
+   "era": "梁纪九",
+   "year_label": "己酉、529",
+   "line_start": 39881,
+   "line_end": 40095
+  },
+  {
+   "vol": 154,
+   "era": "梁纪十",
+   "year_label": "庚戌、530",
+   "line_start": 40096,
+   "line_end": 40372
+  },
+  {
+   "vol": 155,
+   "era": "梁纪十一",
+   "year_label": "辛亥、531",
+   "line_start": 40373,
+   "line_end": 40761
+  },
+  {
+   "vol": 156,
+   "era": "梁纪十二",
+   "year_label": "癸丑、533",
+   "line_start": 40762,
+   "line_end": 41126
+  },
+  {
+   "vol": 157,
+   "era": "梁纪十三",
+   "year_label": "乙卯、535",
+   "line_start": 41127,
+   "line_end": 41625
+  },
+  {
+   "vol": 158,
+   "era": "梁纪十四",
+   "year_label": "戊午、538",
+   "line_start": 41626,
+   "line_end": 42254
+  },
+  {
+   "vol": 159,
+   "era": "梁纪十五",
+   "year_label": "乙丑、545",
+   "line_start": 42255,
+   "line_end": 42470
+  },
+  {
+   "vol": 160,
+   "era": "梁纪十六",
+   "year_label": "丁卯、547",
+   "line_start": 42471,
+   "line_end": 42736
+  },
+  {
+   "vol": 161,
+   "era": "梁纪十七",
+   "year_label": "戊辰、548",
+   "line_start": 42737,
+   "line_end": 43059
+  },
+  {
+   "vol": 162,
+   "era": "梁纪十八",
+   "year_label": "己已、549",
+   "line_start": 43060,
+   "line_end": 43460
+  },
+  {
+   "vol": 163,
+   "era": "梁纪十九",
+   "year_label": "庚午、550",
+   "line_start": 43461,
+   "line_end": 43850
+  },
+  {
+   "vol": 164,
+   "era": "梁纪二十",
+   "year_label": "辛未、551",
+   "line_start": 43851,
+   "line_end": 44345
+  },
+  {
+   "vol": 165,
+   "era": "梁纪二十一",
+   "year_label": "癸酉、553",
+   "line_start": 44346,
+   "line_end": 44734
+  },
+  {
+   "vol": 166,
+   "era": "梁纪二十二",
+   "year_label": "乙亥、555",
+   "line_start": 44735,
+   "line_end": 45167
+  },
+  {
+   "vol": 167,
+   "era": "陈纪一",
+   "year_label": "丁丑、557",
+   "line_start": 45168,
+   "line_end": 45784
+  },
+  {
+   "vol": 168,
+   "era": "陈纪二",
+   "year_label": "庚辰、560",
+   "line_start": 45785,
+   "line_end": 46423
+  },
+  {
+   "vol": 169,
+   "era": "陈纪三",
+   "year_label": "癸未、563",
+   "line_start": 46424,
+   "line_end": 47063
+  },
+  {
+   "vol": 170,
+   "era": "陈纪四",
+   "year_label": "丁亥、567",
+   "line_start": 47064,
+   "line_end": 47871
+  },
+  {
+   "vol": 171,
+   "era": "陈纪五",
+   "year_label": "壬辰、572",
+   "line_start": 47872,
+   "line_end": 48516
+  },
+  {
+   "vol": 172,
+   "era": "陈纪六",
+   "year_label": "乙未、575",
+   "line_start": 48517,
+   "line_end": 48957
+  },
+  {
+   "vol": 173,
+   "era": "陈纪七",
+   "year_label": "乙酉、577",
+   "line_start": 48958,
+   "line_end": 49554
+  },
+  {
+   "vol": 174,
+   "era": "陈纪八",
+   "year_label": "庚子、580",
+   "line_start": 49555,
+   "line_end": 49887
+  },
+  {
+   "vol": 175,
+   "era": "陈纪九",
+   "year_label": "辛丑、581",
+   "line_start": 49888,
+   "line_end": 50466
+  },
+  {
+   "vol": 176,
+   "era": "陈纪十",
+   "year_label": "甲辰、584",
+   "line_start": 50467,
+   "line_end": 51029
+  },
+  {
+   "vol": 177,
+   "era": "隋纪一",
+   "year_label": "己酉、589",
+   "line_start": 51030,
+   "line_end": 51374
+  },
+  {
+   "vol": 178,
+   "era": "隋纪二",
+   "year_label": "壬子、592",
+   "line_start": 51375,
+   "line_end": 51841
+  },
+  {
+   "vol": 179,
+   "era": "隋纪三",
+   "year_label": "庚申、600",
+   "line_start": 51842,
+   "line_end": 52192
+  },
+  {
+   "vol": 180,
+   "era": "隋纪四",
+   "year_label": "甲子、604",
+   "line_start": 52193,
+   "line_end": 52545
+  },
+  {
+   "vol": 181,
+   "era": "隋纪五",
+   "year_label": "戊辰、608",
+   "line_start": 52546,
+   "line_end": 52895
+  },
+  {
+   "vol": 182,
+   "era": "隋纪六",
+   "year_label": "癸酉、613",
+   "line_start": 52896,
+   "line_end": 53289
+  },
+  {
+   "vol": 183,
+   "era": "隋纪七",
+   "year_label": "丙子、616",
+   "line_start": 53290,
+   "line_end": 53589
+  },
+  {
+   "vol": 184,
+   "era": "隋纪八",
+   "year_label": "丁丑、617",
+   "line_start": 53590,
+   "line_end": 53862
+  },
+  {
+   "vol": 185,
+   "era": "唐纪一",
+   "year_label": "戊寅、618",
+   "line_start": 53863,
+   "line_end": 54161
+  },
+  {
+   "vol": 186,
+   "era": "唐纪二",
+   "year_label": null,
+   "line_start": 54162,
+   "line_end": 54484
+  },
+  {
+   "vol": 187,
+   "era": "唐纪三",
+   "year_label": null,
+   "line_start": 54485,
+   "line_end": 54947
+  },
+  {
+   "vol": 188,
+   "era": "唐纪四",
+   "year_label": null,
+   "line_start": 54948,
+   "line_end": 55470
+  },
+  {
+   "vol": 190,
+   "era": "唐纪六",
+   "year_label": null,
+   "line_start": 55471,
+   "line_end": 56173
+  },
+  {
+   "vol": 191,
+   "era": "唐纪七",
+   "year_label": null,
+   "line_start": 56174,
+   "line_end": 56788
+  },
+  {
+   "vol": 192,
+   "era": "唐纪八",
+   "year_label": null,
+   "line_start": 56789,
+   "line_end": 57229
+  },
+  {
+   "vol": 193,
+   "era": "唐纪九",
+   "year_label": null,
+   "line_start": 57230,
+   "line_end": 57750
+  },
+  {
+   "vol": 194,
+   "era": "唐纪十",
+   "year_label": null,
+   "line_start": 57751,
+   "line_end": 58261
+  },
+  {
+   "vol": 195,
+   "era": "唐纪十一",
+   "year_label": null,
+   "line_start": 58262,
+   "line_end": 58730
+  },
+  {
+   "vol": 196,
+   "era": "唐纪十二",
+   "year_label": null,
+   "line_start": 58731,
+   "line_end": 59085
+  },
+  {
+   "vol": 197,
+   "era": "唐纪十三",
+   "year_label": null,
+   "line_start": 59086,
+   "line_end": 59460
+  },
+  {
+   "vol": 198,
+   "era": "唐纪十四",
+   "year_label": null,
+   "line_start": 59461,
+   "line_end": 59939
+  },
+  {
+   "vol": 199,
+   "era": "唐纪十五",
+   "year_label": null,
+   "line_start": 59940,
+   "line_end": 60603
+  },
+  {
+   "vol": 200,
+   "era": "唐纪十六",
+   "year_label": null,
+   "line_start": 60604,
+   "line_end": 60755
+  },
+  {
+   "vol": 201,
+   "era": "唐纪十七",
+   "year_label": null,
+   "line_start": 60756,
+   "line_end": 61416
+  },
+  {
+   "vol": 202,
+   "era": "唐纪十八",
+   "year_label": null,
+   "line_start": 61417,
+   "line_end": 62197
+  },
+  {
+   "vol": 203,
+   "era": "唐纪十九",
+   "year_label": null,
+   "line_start": 62198,
+   "line_end": 62816
+  },
+  {
+   "vol": 204,
+   "era": "唐纪二十",
+   "year_label": null,
+   "line_start": 62817,
+   "line_end": 63393
+  },
+  {
+   "vol": 205,
+   "era": "唐纪二十一",
+   "year_label": "壬辰、692",
+   "line_start": 63394,
+   "line_end": 63870
+  },
+  {
+   "vol": 206,
+   "era": "唐纪二十二",
+   "year_label": null,
+   "line_start": 63871,
+   "line_end": 64433
+  },
+  {
+   "vol": 207,
+   "era": "唐纪二十三",
+   "year_label": null,
+   "line_start": 64434,
+   "line_end": 65042
+  },
+  {
+   "vol": 208,
+   "era": "唐纪二十四",
+   "year_label": null,
+   "line_start": 65043,
+   "line_end": 65635
+  },
+  {
+   "vol": 209,
+   "era": "唐纪二十五",
+   "year_label": null,
+   "line_start": 65636,
+   "line_end": 66082
+  },
+  {
+   "vol": 210,
+   "era": "唐纪二十六",
+   "year_label": null,
+   "line_start": 66083,
+   "line_end": 66705
+  },
+  {
+   "vol": 211,
+   "era": "唐纪二十七",
+   "year_label": null,
+   "line_start": 66706,
+   "line_end": 67288
+  },
+  {
+   "vol": 212,
+   "era": "唐纪二十八",
+   "year_label": null,
+   "line_start": 67289,
+   "line_end": 68009
+  },
+  {
+   "vol": 213,
+   "era": "唐纪二十九",
+   "year_label": null,
+   "line_start": 68010,
+   "line_end": 68620
+  },
+  {
+   "vol": 219,
+   "era": "唐纪三十五",
+   "year_label": "丙申、756",
+   "line_start": 68621,
+   "line_end": 68971
+  },
+  {
+   "vol": 220,
+   "era": "唐纪三十六",
+   "year_label": null,
+   "line_start": 68972,
+   "line_end": 69410
+  },
+  {
+   "vol": 221,
+   "era": "唐纪三十七",
+   "year_label": "己亥、759",
+   "line_start": 69411,
+   "line_end": 69857
+  },
+  {
+   "vol": 222,
+   "era": "唐纪三十八",
+   "year_label": "辛丑、761",
+   "line_start": 69858,
+   "line_end": 70396
+  },
+  {
+   "vol": 224,
+   "era": "唐纪四十",
+   "year_label": null,
+   "line_start": 70397,
+   "line_end": 71048
+  },
+  {
+   "vol": 225,
+   "era": "唐纪四十一",
+   "year_label": "甲寅、774",
+   "line_start": 71049,
+   "line_end": 71747
+  },
+  {
+   "vol": 226,
+   "era": "唐纪四十二",
+   "year_label": "己未、779",
+   "line_start": 71748,
+   "line_end": 72116
+  },
+  {
+   "vol": 227,
+   "era": "唐纪四十三",
+   "year_label": null,
+   "line_start": 72117,
+   "line_end": 72513
+  },
+  {
+   "vol": 228,
+   "era": "唐纪四十四",
+   "year_label": null,
+   "line_start": 72514,
+   "line_end": 72796
+  },
+  {
+   "vol": 229,
+   "era": "唐纪四十五",
+   "year_label": null,
+   "line_start": 72797,
+   "line_end": 73043
+  },
+  {
+   "vol": 230,
+   "era": "唐纪四十六",
+   "year_label": "甲子、784",
+   "line_start": 73044,
+   "line_end": 73286
+  },
+  {
+   "vol": 231,
+   "era": "唐纪四十七",
+   "year_label": null,
+   "line_start": 73287,
+   "line_end": 73637
+  },
+  {
+   "vol": 232,
+   "era": "唐纪四十八",
+   "year_label": "乙丑、785",
+   "line_start": 73638,
+   "line_end": 74048
+  },
+  {
+   "vol": 233,
+   "era": "唐纪四十九",
+   "year_label": "丁卯、787",
+   "line_start": 74049,
+   "line_end": 74417
+  },
+  {
+   "vol": 234,
+   "era": "唐纪五十",
+   "year_label": null,
+   "line_start": 74418,
+   "line_end": 74754
+  },
+  {
+   "vol": 235,
+   "era": "唐纪五十一",
+   "year_label": null,
+   "line_start": 74755,
+   "line_end": 75309
+  },
+  {
+   "vol": 236,
+   "era": "唐纪五十二",
+   "year_label": "辛巳、801",
+   "line_start": 75310,
+   "line_end": 75875
+  },
+  {
+   "vol": 237,
+   "era": "唐纪五十三",
+   "year_label": null,
+   "line_start": 75876,
+   "line_end": 76418
+  },
+  {
+   "vol": 238,
+   "era": "唐纪五十四",
+   "year_label": "己丑、809",
+   "line_start": 76419,
+   "line_end": 76829
+  },
+  {
+   "vol": 239,
+   "era": "唐纪五十五",
+   "year_label": "壬辰、812",
+   "line_start": 76830,
+   "line_end": 77414
+  },
+  {
+   "vol": 240,
+   "era": "唐纪五十六",
+   "year_label": "丁酉、817",
+   "line_start": 77415,
+   "line_end": 77901
+  },
+  {
+   "vol": 241,
+   "era": "唐纪五十七",
+   "year_label": "己亥、819",
+   "line_start": 77902,
+   "line_end": 78428
+  },
+  {
+   "vol": 242,
+   "era": "唐纪五十八",
+   "year_label": "辛丑、821",
+   "line_start": 78429,
+   "line_end": 78870
+  },
+  {
+   "vol": 243,
+   "era": "唐纪五十九",
+   "year_label": "癸卯、823",
+   "line_start": 78871,
+   "line_end": 79482
+  },
+  {
+   "vol": 244,
+   "era": "唐纪六十",
+   "year_label": "己酉、829",
+   "line_start": 79483,
+   "line_end": 79929
+  },
+  {
+   "vol": 245,
+   "era": "唐纪六十一",
+   "year_label": null,
+   "line_start": 79930,
+   "line_end": 80520
+  },
+  {
+   "vol": 246,
+   "era": "唐纪六十二",
+   "year_label": null,
+   "line_start": 80521,
+   "line_end": 81075
+  },
+  {
+   "vol": 247,
+   "era": "唐纪六十三",
+   "year_label": null,
+   "line_start": 81076,
+   "line_end": 81454
+  },
+  {
+   "vol": 248,
+   "era": "唐纪六十四",
+   "year_label": null,
+   "line_start": 81455,
+   "line_end": 82119
+  },
+  {
+   "vol": 249,
+   "era": "唐纪六十五",
+   "year_label": "庚午、850",
+   "line_start": 82120,
+   "line_end": 82783
+  },
+  {
+   "vol": 250,
+   "era": "唐纪六十六",
+   "year_label": null,
+   "line_start": 82784,
+   "line_end": 83439
+  },
+  {
+   "vol": 251,
+   "era": "唐纪六十七",
+   "year_label": "戊子、868",
+   "line_start": 83440,
+   "line_end": 83758
+  },
+  {
+   "vol": 252,
+   "era": "唐纪六十八",
+   "year_label": "庚寅、870",
+   "line_start": 83759,
+   "line_end": 84361
+  },
+  {
+   "vol": 253,
+   "era": "唐纪六十九",
+   "year_label": "丁酉、877",
+   "line_start": 84362,
+   "line_end": 84928
+  },
+  {
+   "vol": 254,
+   "era": "唐纪七十",
+   "year_label": "庚子、880",
+   "line_start": 84929,
+   "line_end": 85439
+  },
+  {
+   "vol": 255,
+   "era": "唐纪七十一",
+   "year_label": "壬寅、882",
+   "line_start": 85440,
+   "line_end": 85918
+  },
+  {
+   "vol": 256,
+   "era": "唐纪七十二",
+   "year_label": "甲辰、884",
+   "line_start": 85919,
+   "line_end": 86453
+  },
+  {
+   "vol": 257,
+   "era": "唐纪七十三",
+   "year_label": "丁未、887",
+   "line_start": 86454,
+   "line_end": 86932
+  },
+  {
+   "vol": 258,
+   "era": "唐纪七十四",
+   "year_label": "己酉、889",
+   "line_start": 86933,
+   "line_end": 87483
+  },
+  {
+   "vol": 259,
+   "era": "唐纪七十五",
+   "year_label": "壬子、892",
+   "line_start": 87484,
+   "line_end": 87986
+  },
+  {
+   "vol": 260,
+   "era": "唐纪七十六",
+   "year_label": "乙卯、895",
+   "line_start": 87987,
+   "line_end": 88585
+  },
+  {
+   "vol": 261,
+   "era": "唐纪七十七",
+   "year_label": "丁巳、897",
+   "line_start": 88586,
+   "line_end": 89176
+  },
+  {
+   "vol": 262,
+   "era": "唐纪七十八",
+   "year_label": "庚申、900",
+   "line_start": 89177,
+   "line_end": 89615
+  },
+  {
+   "vol": 263,
+   "era": "唐纪七十九",
+   "year_label": "壬戌、902",
+   "line_start": 89616,
+   "line_end": 89990
+  },
+  {
+   "vol": 264,
+   "era": "唐纪八十",
+   "year_label": "癸亥、903",
+   "line_start": 89991,
+   "line_end": 90379
+  },
+  {
+   "vol": 265,
+   "era": "唐纪八十一",
+   "year_label": "子、904",
+   "line_start": 90380,
+   "line_end": 90946
+  },
+  {
+   "vol": 266,
+   "era": "后梁纪一",
+   "year_label": "丁卯、907",
+   "line_start": 90947,
+   "line_end": 91461
+  },
+  {
+   "vol": 267,
+   "era": "后梁纪二",
+   "year_label": null,
+   "line_start": 91462,
+   "line_end": 92044
+  },
+  {
+   "vol": 268,
+   "era": "后梁纪三",
+   "year_label": "辛未、911",
+   "line_start": 92045,
+   "line_end": 92673
+  },
+  {
+   "vol": 269,
+   "era": "后梁纪四",
+   "year_label": "癸酉、913",
+   "line_start": 92674,
+   "line_end": 93180
+  },
+  {
+   "vol": 270,
+   "era": "后梁纪五",
+   "year_label": "丁丑、917",
+   "line_start": 93181,
+   "line_end": 93635
+  },
+  {
+   "vol": 271,
+   "era": "后梁纪六",
+   "year_label": "己卯、919",
+   "line_start": 93636,
+   "line_end": 94040
+  },
+  {
+   "vol": 272,
+   "era": "后唐纪一",
+   "year_label": null,
+   "line_start": 94041,
+   "line_end": 94471
+  },
+  {
+   "vol": 273,
+   "era": "后唐纪二",
+   "year_label": "甲申，公元924年",
+   "line_start": 94472,
+   "line_end": 94986
+  },
+  {
+   "vol": 274,
+   "era": "后唐纪三",
+   "year_label": "乙酉，公元925年",
+   "line_start": 94987,
+   "line_end": 95381
+  },
+  {
+   "vol": 275,
+   "era": "后唐纪四",
+   "year_label": "丙戌、926",
+   "line_start": 95382,
+   "line_end": 95878
+  },
+  {
+   "vol": 276,
+   "era": "后唐纪五",
+   "year_label": "丁亥，927",
+   "line_start": 95879,
+   "line_end": 96397
+  },
+  {
+   "vol": 277,
+   "era": "后唐纪六",
+   "year_label": null,
+   "line_start": 96398,
+   "line_end": 97056
+  },
+  {
+   "vol": 278,
+   "era": "后唐纪七",
+   "year_label": null,
+   "line_start": 97057,
+   "line_end": 97520
+  },
+  {
+   "vol": 279,
+   "era": "后唐纪八",
+   "year_label": null,
+   "line_start": 97521,
+   "line_end": 98113
+  },
+  {
+   "vol": 280,
+   "era": "后晋纪一",
+   "year_label": null,
+   "line_start": 98114,
+   "line_end": 98470
+  },
+  {
+   "vol": 281,
+   "era": "后晋纪二",
+   "year_label": null,
+   "line_start": 98471,
+   "line_end": 98970
+  },
+  {
+   "vol": 282,
+   "era": "后晋纪三",
+   "year_label": null,
+   "line_start": 98971,
+   "line_end": 99545
+  },
+  {
+   "vol": 283,
+   "era": "后晋纪四",
+   "year_label": null,
+   "line_start": 99546,
+   "line_end": 100125
+  },
+  {
+   "vol": 284,
+   "era": "后晋纪五",
+   "year_label": null,
+   "line_start": 100126,
+   "line_end": 100624
+  },
+  {
+   "vol": 285,
+   "era": "后晋纪六",
+   "year_label": null,
+   "line_start": 100625,
+   "line_end": 101089
+  },
+  {
+   "vol": 286,
+   "era": "后汉纪一",
+   "year_label": null,
+   "line_start": 101090,
+   "line_end": 101548
+  },
+  {
+   "vol": 287,
+   "era": "后汉纪二",
+   "year_label": null,
+   "line_start": 101549,
+   "line_end": 102044
+  },
+  {
+   "vol": 288,
+   "era": "后汉纪三",
+   "year_label": null,
+   "line_start": 102045,
+   "line_end": 102573
+  },
+  {
+   "vol": 289,
+   "era": "后汉纪四",
+   "year_label": null,
+   "line_start": 102574,
+   "line_end": 103001
+  },
+  {
+   "vol": 290,
+   "era": "后周纪一",
+   "year_label": null,
+   "line_start": 103002,
+   "line_end": 103550
+  },
+  {
+   "vol": 291,
+   "era": "后周纪二",
+   "year_label": null,
+   "line_start": 103551,
+   "line_end": 104051
+  },
+  {
+   "vol": 292,
+   "era": "后周纪三",
+   "year_label": null,
+   "line_start": 104052,
+   "line_end": 104525
+  },
+  {
+   "vol": 293,
+   "era": "后周纪四",
+   "year_label": null,
+   "line_start": 104526,
+   "line_end": 105024
+  },
+  {
+   "vol": 294,
+   "era": "后周纪五",
+   "year_label": null,
+   "line_start": 105025,
+   "line_end": 105587
+  },
+  {
+   "vol": 1,
+   "era": "周纪一",
+   "year_label": "戊寅、前403",
+   "line_start": 105588,
+   "line_end": 106155
+  },
+  {
+   "vol": 2,
+   "era": "周纪二",
+   "year_label": "癸丑、前368",
+   "line_start": 106156,
+   "line_end": 106765
+  },
+  {
+   "vol": 3,
+   "era": "周纪三",
+   "year_label": "辛丑、前320",
+   "line_start": 106766,
+   "line_end": 107173
+  },
+  {
+   "vol": 4,
+   "era": "周纪四",
+   "year_label": "甲子、前297",
+   "line_start": 107174,
+   "line_end": 107605
+  },
+  {
+   "vol": 5,
+   "era": "周纪五",
+   "year_label": "己丑、前272",
+   "line_start": 107606,
+   "line_end": 107881
+  },
+  {
+   "vol": 6,
+   "era": "秦纪一",
+   "year_label": "丙午、前255",
+   "line_start": 107882,
+   "line_end": 108395
+  },
+  {
+   "vol": 7,
+   "era": "秦纪二",
+   "year_label": "甲戌、前227",
+   "line_start": 108396,
+   "line_end": 108834
+  },
+  {
+   "vol": 8,
+   "era": "秦纪三",
+   "year_label": "癸已、前208",
+   "line_start": 108835,
+   "line_end": 109130
+  },
+  {
+   "vol": 9,
+   "era": "汉纪一",
+   "year_label": null,
+   "line_start": 109131,
+   "line_end": 109428
+  },
+  {
+   "vol": 10,
+   "era": "汉纪二",
+   "year_label": "丁酉、前204",
+   "line_start": 109429,
+   "line_end": 109648
+  },
+  {
+   "vol": 11,
+   "era": "汉纪三",
+   "year_label": "己亥、前202",
+   "line_start": 109649,
+   "line_end": 109946
+  },
+  {
+   "vol": 12,
+   "era": "汉纪四",
+   "year_label": "壬寅、前199",
+   "line_start": 109947,
+   "line_end": 110442
+  },
+  {
+   "vol": 13,
+   "era": "汉纪五",
+   "year_label": "甲寅、前187",
+   "line_start": 110443,
+   "line_end": 110920
+  },
+  {
+   "vol": 14,
+   "era": "汉纪六",
+   "year_label": "甲子、前177",
+   "line_start": 110921,
+   "line_end": 111200
+  },
+  {
+   "vol": 15,
+   "era": "汉纪七",
+   "year_label": "壬申、前169",
+   "line_start": 111201,
+   "line_end": 111607
+  },
+  {
+   "vol": 16,
+   "era": "汉纪八",
+   "year_label": "丁亥、前154",
+   "line_start": 111608,
+   "line_end": 112137
+  },
+  {
+   "vol": 17,
+   "era": "汉纪九",
+   "year_label": null,
+   "line_start": 112138,
+   "line_end": 112462
+  },
+  {
+   "vol": 18,
+   "era": "汉纪十",
+   "year_label": null,
+   "line_start": 112463,
+   "line_end": 112845
+  },
+  {
+   "vol": 19,
+   "era": "汉纪十一",
+   "year_label": "丁巳、前124",
+   "line_start": 112846,
+   "line_end": 113199
+  },
+  {
+   "vol": 20,
+   "era": "汉纪十二",
+   "year_label": "癸亥、前118",
+   "line_start": 113200,
+   "line_end": 113583
+  },
+  {
+   "vol": 21,
+   "era": "汉纪十三",
+   "year_label": "壬申、前109",
+   "line_start": 113584,
+   "line_end": 114026
+  },
+  {
+   "vol": 22,
+   "era": "汉纪十四",
+   "year_label": null,
+   "line_start": 114027,
+   "line_end": 114421
+  },
+  {
+   "vol": 23,
+   "era": "汉纪十五",
+   "year_label": "乙未、前86",
+   "line_start": 114422,
+   "line_end": 114766
+  },
+  {
+   "vol": 24,
+   "era": "汉纪十六",
+   "year_label": "丁未、前74",
+   "line_start": 114767,
+   "line_end": 115069
+  },
+  {
+   "vol": 25,
+   "era": "汉纪十七",
+   "year_label": "甲寅、前67",
+   "line_start": 115070,
+   "line_end": 115392
+  },
+  {
+   "vol": 26,
+   "era": "汉纪十八",
+   "year_label": "庚申、前61",
+   "line_start": 115393,
+   "line_end": 115571
+  },
+  {
+   "vol": 27,
+   "era": "汉纪十九",
+   "year_label": "癸亥、前58",
+   "line_start": 115572,
+   "line_end": 115915
+  },
+  {
+   "vol": 27,
+   "era": "汉纪十九",
+   "year_label": "癸亥、前58",
+   "line_start": 115916,
+   "line_end": 116257
+  },
+  {
+   "vol": 28,
+   "era": "汉纪二十",
+   "year_label": null,
+   "line_start": 116258,
+   "line_end": 116383
+  },
+  {
+   "vol": 29,
+   "era": "汉纪二十一",
+   "year_label": "庚辰、前41",
+   "line_start": 116384,
+   "line_end": 116735
+  },
+  {
+   "vol": 30,
+   "era": "汉纪二十二",
+   "year_label": "己丑、前32",
+   "line_start": 116736,
+   "line_end": 117120
+  },
+  {
+   "vol": 31,
+   "era": "汉纪二十三",
+   "year_label": "己亥、前22",
+   "line_start": 117121,
+   "line_end": 117332
+  },
+  {
+   "vol": 32,
+   "era": "汉纪二十四",
+   "year_label": "戊申、前13",
+   "line_start": 117333,
+   "line_end": 117592
+  },
+  {
+   "vol": 33,
+   "era": "汉纪二十五",
+   "year_label": "甲寅、前7",
+   "line_start": 117593,
+   "line_end": 117824
+  },
+  {
+   "vol": 34,
+   "era": "汉纪二十六",
+   "year_label": "丙辰、前5",
+   "line_start": 117825,
+   "line_end": 118048
+  },
+  {
+   "vol": 35,
+   "era": "汉纪二十七",
+   "year_label": "己未、前2",
+   "line_start": 118049,
+   "line_end": 118336
+  },
+  {
+   "vol": 36,
+   "era": "汉纪二十八",
+   "year_label": "癸亥、3",
+   "line_start": 118337,
+   "line_end": 118641
+  },
+  {
+   "vol": 37,
+   "era": "汉纪二十九",
+   "year_label": "己巳，公元9年",
+   "line_start": 118642,
+   "line_end": 118978
+  },
+  {
+   "vol": 38,
+   "era": "汉纪三十",
+   "year_label": "乙亥、15",
+   "line_start": 118979,
+   "line_end": 119326
+  },
+  {
+   "vol": 39,
+   "era": "汉纪三十一",
+   "year_label": "癸未、23",
+   "line_start": 119327,
+   "line_end": 119640
+  },
+  {
+   "vol": 40,
+   "era": "汉纪三十二",
+   "year_label": "乙酉、25",
+   "line_start": 119641,
+   "line_end": 120018
+  },
+  {
+   "vol": 41,
+   "era": "汉纪三十三",
+   "year_label": "丁亥、27",
+   "line_start": 120019,
+   "line_end": 120408
+  },
+  {
+   "vol": 42,
+   "era": "汉纪三十四",
+   "year_label": "庚寅、30",
+   "line_start": 120409,
+   "line_end": 120836
+  },
+  {
+   "vol": 43,
+   "era": "汉纪三十五",
+   "year_label": "丙申、36",
+   "line_start": 120837,
+   "line_end": 121367
+  },
+  {
+   "vol": 44,
+   "era": "汉纪三十六",
+   "year_label": "丁未、47",
+   "line_start": 121368,
+   "line_end": 121894
+  },
+  {
+   "vol": 45,
+   "era": "汉纪三十",
+   "year_label": "辛酉、61",
+   "line_start": 121895,
+   "line_end": 122330
+  },
+  {
+   "vol": 46,
+   "era": "汉纪三十八",
+   "year_label": null,
+   "line_start": 122331,
+   "line_end": 122717
+  },
+  {
+   "vol": 47,
+   "era": "汉纪三十九",
+   "year_label": null,
+   "line_start": 122718,
+   "line_end": 123072
+  },
+  {
+   "vol": 48,
+   "era": "汉纪四十",
+   "year_label": "壬辰、92",
+   "line_start": 123073,
+   "line_end": 123634
+  },
+  {
+   "vol": 49,
+   "era": "汉纪四十一",
+   "year_label": "丙午、106",
+   "line_start": 123635,
+   "line_end": 124289
+  },
+  {
+   "vol": 50,
+   "era": "汉纪四十二",
+   "year_label": "丙辰、116",
+   "line_start": 124290,
+   "line_end": 124912
+  },
+  {
+   "vol": 51,
+   "era": "汉纪四十三",
+   "year_label": "乙丑、125",
+   "line_start": 124913,
+   "line_end": 125431
+  },
+  {
+   "vol": 52,
+   "era": "汉纪四十四",
+   "year_label": "甲戌、134",
+   "line_start": 125432,
+   "line_end": 125977
+  },
+  {
+   "vol": 53,
+   "era": "汉纪四十五",
+   "year_label": "丙戌、146",
+   "line_start": 125978,
+   "line_end": 126456
+  },
+  {
+   "vol": 54,
+   "era": "汉纪四十六",
+   "year_label": "丁酉、157",
+   "line_start": 126457,
+   "line_end": 126921
+  },
+  {
+   "vol": 55,
+   "era": "汉纪四十七",
+   "year_label": "甲辰、164",
+   "line_start": 126922,
+   "line_end": 127211
+  },
+  {
+   "vol": 56,
+   "era": "汉纪四十八",
+   "year_label": null,
+   "line_start": 127212,
+   "line_end": 127587
+  },
+  {
+   "vol": 57,
+   "era": "汉纪四十九",
+   "year_label": "壬子、172",
+   "line_start": 127588,
+   "line_end": 128126
+  }
+ ],
+ "gaps": {
+  "missing_volumes": [
+   189,
+   214,
+   215,
+   216,
+   217,
+   218,
+   223
+  ],
+  "note": "电子书缺卷189、214-218、223正文; 卷27/190/204-208/213原文重复, 已删除后一份副本"
+ }
+}

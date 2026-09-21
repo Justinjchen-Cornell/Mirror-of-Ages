@@ -1,0 +1,551 @@
+{
+ "source": "白话二十四史之1 史记(全译本, 130篇, 无原文)",
+ "built": "2026-09-22",
+ "note": "白话译本。引用以译本文字为准; 篇名即本纪/世家/列传名",
+ "chapters": [
+  {
+   "title": "夏本纪",
+   "line_start": 241,
+   "line_end": 440
+  },
+  {
+   "title": "殷本纪",
+   "line_start": 441,
+   "line_end": 648
+  },
+  {
+   "title": "周本纪",
+   "line_start": 649,
+   "line_end": 1140
+  },
+  {
+   "title": "秦本纪",
+   "line_start": 1141,
+   "line_end": 1755
+  },
+  {
+   "title": "秦始皇本纪",
+   "line_start": 1756,
+   "line_end": 2520
+  },
+  {
+   "title": "项羽本纪",
+   "line_start": 2521,
+   "line_end": 2963
+  },
+  {
+   "title": "高祖本纪",
+   "line_start": 2964,
+   "line_end": 3499
+  },
+  {
+   "title": "吕太后本纪",
+   "line_start": 3500,
+   "line_end": 3714
+  },
+  {
+   "title": "孝文本纪",
+   "line_start": 3715,
+   "line_end": 3955
+  },
+  {
+   "title": "孝景本纪",
+   "line_start": 3956,
+   "line_end": 4077
+  },
+  {
+   "title": "孝武本纪",
+   "line_start": 4078,
+   "line_end": 4430
+  },
+  {
+   "title": "吴太伯世家",
+   "line_start": 4431,
+   "line_end": 4647
+  },
+  {
+   "title": "齐太公世家",
+   "line_start": 4648,
+   "line_end": 5072
+  },
+  {
+   "title": "鲁周公世家",
+   "line_start": 5073,
+   "line_end": 5429
+  },
+  {
+   "title": "燕召公世家",
+   "line_start": 5430,
+   "line_end": 5595
+  },
+  {
+   "title": "管蔡世家",
+   "line_start": 5596,
+   "line_end": 5770
+  },
+  {
+   "title": "陈杞世家",
+   "line_start": 5771,
+   "line_end": 5940
+  },
+  {
+   "title": "卫康叔世家",
+   "line_start": 5941,
+   "line_end": 6144
+  },
+  {
+   "title": "宋微子世家",
+   "line_start": 6145,
+   "line_end": 6399
+  },
+  {
+   "title": "晋世家",
+   "line_start": 6400,
+   "line_end": 7071
+  },
+  {
+   "title": "楚世家",
+   "line_start": 7072,
+   "line_end": 7629
+  },
+  {
+   "title": "越王勾践世家",
+   "line_start": 7630,
+   "line_end": 7781
+  },
+  {
+   "title": "郑世家",
+   "line_start": 7782,
+   "line_end": 8051
+  },
+  {
+   "title": "赵世家",
+   "line_start": 8052,
+   "line_end": 8674
+  },
+  {
+   "title": "魏世家",
+   "line_start": 8675,
+   "line_end": 8979
+  },
+  {
+   "title": "韩世家",
+   "line_start": 8980,
+   "line_end": 9136
+  },
+  {
+   "title": "田敬仲完世家",
+   "line_start": 9137,
+   "line_end": 9426
+  },
+  {
+   "title": "孔子世家",
+   "line_start": 9427,
+   "line_end": 9781
+  },
+  {
+   "title": "陈涉世家",
+   "line_start": 9782,
+   "line_end": 9942
+  },
+  {
+   "title": "外戚世家",
+   "line_start": 9943,
+   "line_end": 10166
+  },
+  {
+   "title": "楚元王世家",
+   "line_start": 10167,
+   "line_end": 10211
+  },
+  {
+   "title": "荆燕世家",
+   "line_start": 10212,
+   "line_end": 10270
+  },
+  {
+   "title": "齐悼惠王世家",
+   "line_start": 10271,
+   "line_end": 10440
+  },
+  {
+   "title": "萧相国世家",
+   "line_start": 10441,
+   "line_end": 10518
+  },
+  {
+   "title": "曹相国世家",
+   "line_start": 10519,
+   "line_end": 10642
+  },
+  {
+   "title": "留侯世家",
+   "line_start": 10643,
+   "line_end": 10818
+  },
+  {
+   "title": "陈丞相世家",
+   "line_start": 10819,
+   "line_end": 10973
+  },
+  {
+   "title": "绛侯周勃世家",
+   "line_start": 10974,
+   "line_end": 11151
+  },
+  {
+   "title": "梁孝王世家",
+   "line_start": 11152,
+   "line_end": 11316
+  },
+  {
+   "title": "五宗世家",
+   "line_start": 11317,
+   "line_end": 11469
+  },
+  {
+   "title": "三王世家",
+   "line_start": 11470,
+   "line_end": 11650
+  },
+  {
+   "title": "伯夷列传",
+   "line_start": 11651,
+   "line_end": 11680
+  },
+  {
+   "title": "管晏列传",
+   "line_start": 11681,
+   "line_end": 11736
+  },
+  {
+   "title": "老子韩非列传",
+   "line_start": 11737,
+   "line_end": 11850
+  },
+  {
+   "title": "司马穰苴列传",
+   "line_start": 11851,
+   "line_end": 11886
+  },
+  {
+   "title": "孙子吴起列传",
+   "line_start": 11887,
+   "line_end": 11992
+  },
+  {
+   "title": "伍子胥列传",
+   "line_start": 11993,
+   "line_end": 12145
+  },
+  {
+   "title": "仲尼弟子列传",
+   "line_start": 12146,
+   "line_end": 12418
+  },
+  {
+   "title": "商君列传",
+   "line_start": 12419,
+   "line_end": 12551
+  },
+  {
+   "title": "苏秦列传",
+   "line_start": 12552,
+   "line_end": 12858
+  },
+  {
+   "title": "张仪列传",
+   "line_start": 12859,
+   "line_end": 13135
+  },
+  {
+   "title": "樗里子甘茂列传",
+   "line_start": 13136,
+   "line_end": 13292
+  },
+  {
+   "title": "穰侯列传",
+   "line_start": 13293,
+   "line_end": 13392
+  },
+  {
+   "title": "白起王翦列传",
+   "line_start": 13393,
+   "line_end": 13529
+  },
+  {
+   "title": "孟子荀卿列传",
+   "line_start": 13530,
+   "line_end": 13600
+  },
+  {
+   "title": "孟尝君列传",
+   "line_start": 13601,
+   "line_end": 13774
+  },
+  {
+   "title": "平原君虞卿列传",
+   "line_start": 13775,
+   "line_end": 13904
+  },
+  {
+   "title": "魏公子列传",
+   "line_start": 13905,
+   "line_end": 14029
+  },
+  {
+   "title": "春申君列传",
+   "line_start": 14030,
+   "line_end": 14412
+  },
+  {
+   "title": "乐毅列传",
+   "line_start": 14413,
+   "line_end": 14522
+  },
+  {
+   "title": "廉颇蔺相如列传",
+   "line_start": 14523,
+   "line_end": 14683
+  },
+  {
+   "title": "田单列传",
+   "line_start": 14684,
+   "line_end": 14746
+  },
+  {
+   "title": "鲁仲连邹阳列传",
+   "line_start": 14747,
+   "line_end": 14918
+  },
+  {
+   "title": "屈原贾生列传",
+   "line_start": 14919,
+   "line_end": 15112
+  },
+  {
+   "title": "吕不韦列传",
+   "line_start": 15113,
+   "line_end": 15191
+  },
+  {
+   "title": "刺客列传",
+   "line_start": 15192,
+   "line_end": 15414
+  },
+  {
+   "title": "李斯列传",
+   "line_start": 15415,
+   "line_end": 15715
+  },
+  {
+   "title": "蒙恬列传",
+   "line_start": 15716,
+   "line_end": 15790
+  },
+  {
+   "title": "张耳陈馀列传",
+   "line_start": 15791,
+   "line_end": 15933
+  },
+  {
+   "title": "魏豹彭越列传",
+   "line_start": 15934,
+   "line_end": 16023
+  },
+  {
+   "title": "黥布列传",
+   "line_start": 16024,
+   "line_end": 16141
+  },
+  {
+   "title": "淮阴侯列传",
+   "line_start": 16142,
+   "line_end": 16415
+  },
+  {
+   "title": "韩信卢绾列传",
+   "line_start": 16416,
+   "line_end": 16540
+  },
+  {
+   "title": "田儋列传",
+   "line_start": 16541,
+   "line_end": 16628
+  },
+  {
+   "title": "樊郦滕灌列传",
+   "line_start": 16629,
+   "line_end": 16898
+  },
+  {
+   "title": "张丞相列传",
+   "line_start": 16899,
+   "line_end": 17103
+  },
+  {
+   "title": "郦生陆贾列传",
+   "line_start": 17104,
+   "line_end": 17262
+  },
+  {
+   "title": "傅靳蒯成列传",
+   "line_start": 17263,
+   "line_end": 17329
+  },
+  {
+   "title": "刘敬叔孙通列传",
+   "line_start": 17330,
+   "line_end": 17436
+  },
+  {
+   "title": "季布栾布列传",
+   "line_start": 17437,
+   "line_end": 17511
+  },
+  {
+   "title": "袁盎晁错列传",
+   "line_start": 17512,
+   "line_end": 17661
+  },
+  {
+   "title": "张释之冯唐列传",
+   "line_start": 17662,
+   "line_end": 17749
+  },
+  {
+   "title": "万石张叔列传",
+   "line_start": 17750,
+   "line_end": 17874
+  },
+  {
+   "title": "田叔列传",
+   "line_start": 17875,
+   "line_end": 17960
+  },
+  {
+   "title": "扁鹊仓公列传",
+   "line_start": 17961,
+   "line_end": 18232
+  },
+  {
+   "title": "吴王濞列传",
+   "line_start": 18233,
+   "line_end": 18404
+  },
+  {
+   "title": "魏其武安侯列传",
+   "line_start": 18405,
+   "line_end": 18569
+  },
+  {
+   "title": "韩长孺列传",
+   "line_start": 18570,
+   "line_end": 18674
+  },
+  {
+   "title": "李将军列传",
+   "line_start": 18675,
+   "line_end": 18807
+  },
+  {
+   "title": "匈奴列传",
+   "line_start": 18808,
+   "line_end": 19231
+  },
+  {
+   "title": "卫将军骠骑列传",
+   "line_start": 19232,
+   "line_end": 19527
+  },
+  {
+   "title": "平津侯主父列传",
+   "line_start": 19528,
+   "line_end": 19745
+  },
+  {
+   "title": "南越列传",
+   "line_start": 19746,
+   "line_end": 19854
+  },
+  {
+   "title": "东越列传",
+   "line_start": 19855,
+   "line_end": 19914
+  },
+  {
+   "title": "朝鲜列传",
+   "line_start": 19915,
+   "line_end": 19969
+  },
+  {
+   "title": "西南夷列传",
+   "line_start": 19970,
+   "line_end": 20750
+  },
+  {
+   "title": "循吏列传",
+   "line_start": 20751,
+   "line_end": 20800
+  },
+  {
+   "title": "汲郑列传",
+   "line_start": 20801,
+   "line_end": 20903
+  },
+  {
+   "title": "儒林列传",
+   "line_start": 20904,
+   "line_end": 21076
+  },
+  {
+   "title": "酷吏列传",
+   "line_start": 21077,
+   "line_end": 21383
+  },
+  {
+   "title": "大宛列传",
+   "line_start": 21384,
+   "line_end": 21624
+  },
+  {
+   "title": "游侠列传",
+   "line_start": 21625,
+   "line_end": 21725
+  },
+  {
+   "title": "佞幸列传",
+   "line_start": 21726,
+   "line_end": 21786
+  },
+  {
+   "title": "滑稽列传",
+   "line_start": 21787,
+   "line_end": 21985
+  },
+  {
+   "title": "日者列传",
+   "line_start": 21986,
+   "line_end": 22058
+  },
+  {
+   "title": "龟策列传",
+   "line_start": 22059,
+   "line_end": 22341
+  },
+  {
+   "title": "货殖列传",
+   "line_start": 22342,
+   "line_end": 22587
+  },
+  {
+   "title": "太史公自序",
+   "line_start": 22588,
+   "line_end": 23055
+  }
+ ],
+ "titles_not_located": [
+  "五帝本纪",
+  "范睢蔡泽列传"
+ ]
+}
